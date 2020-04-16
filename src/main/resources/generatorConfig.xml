@@ -4,9 +4,10 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <!--    windows下路径, D:\downloads\xxx.jar-->
-    <classPathEntry location="/Volumes/xiangxuan/mysql-connector-java-5.1.6.jar" />
-
+    <!--    windows下路径-->
+    <classPathEntry location="D:\Program Files\MAVEN\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar" />
+    <!-- Mac 下路路径
+    <classPathEntry location="/Volumes/xiangxuan/mysql-connector-java-5.1.6.jar" />-->
     <context id="MySqlTables" targetRuntime="MyBatis3">
 
         <!--        不再追加xml内容-->
@@ -42,13 +43,13 @@
 
         <!--<table tableName="mall_order" domainObjectName="Order" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
         <!--        <table tableName="mall_order_item" domainObjectName="OrderItem" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
-              <table tableName="mall_user" domainObjectName="User" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
-        <!--        <table tableName="mall_category" domainObjectName="Category" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
+        <!--     <table tableName="mall_user" domainObjectName="User" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
+           <table tableName="mall_category" domainObjectName="Category" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
         <!--        <table tableName="mall_product" domainObjectName="Product" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false">-->
         <!--            <columnOverride column="detail" jdbcType="VARCHAR" />-->
         <!--            <columnOverride column="sub_images" jdbcType="VARCHAR" />-->
         <!--        </table>-->
         <!-- <table tableName="mall_shipping" domainObjectName="Shipping" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
-
+        <!-- <table tableName="mall_pay_info" domainObjectName="PayInfo" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/> -->
     </context>
 </generatorConfiguration>

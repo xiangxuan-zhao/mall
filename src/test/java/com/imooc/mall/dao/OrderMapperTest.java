@@ -1,5 +1,6 @@
 package com.imooc.mall.dao;
 
+import com.imooc.mall.MallApplicationTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +13,8 @@ import static org.junit.Assert.*;
  * @author Administrator
  * @date 2020/04/01
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class OrderMapperTest {
+public class OrderMapperTest extends MallApplicationTest {
 
-    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private OrderMapper orderMapper;
 
@@ -34,7 +32,7 @@ public class OrderMapperTest {
 
     @Test
     public void selectByPrimaryKey() {
-        System.out.print(orderMapper.selectByPrimaryKey(1));
+       orderMapper.selectByPrimaryKey(1);
     }
 
     @Test

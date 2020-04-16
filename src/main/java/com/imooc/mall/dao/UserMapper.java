@@ -2,6 +2,9 @@ package com.imooc.mall.dao;
 
 import com.imooc.mall.pojo.User;
 
+/**
+ * @author Administrator
+ */
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +17,11 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    int countByUsername(String username);
+
+    int countByEmail(String email);
+
+    User selectByUsername(String username);
+
 }
