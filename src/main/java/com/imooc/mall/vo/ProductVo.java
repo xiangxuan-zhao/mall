@@ -1,14 +1,15 @@
-package com.imooc.mall.pojo;
+package com.imooc.mall.vo;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.util.Date;
+
 /**
  * @author Administrator
+ * @date 2020/04/17
  */
 @Data
-public class Product {
+public class ProductVo {
     private Integer id;
 
     private Integer categoryId;
@@ -19,17 +20,7 @@ public class Product {
 
     private String mainImage;
 
-    private String subImages;
-
-    private String detail;
-
-    private BigDecimal price;
-
-    private Integer stock;
-
     private Integer status;
 
-    private Date createTime;
-
-    private Date updateTime;
+    private BigDecimal price;
 }

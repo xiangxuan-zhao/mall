@@ -17,10 +17,11 @@ import java.util.List;
 public class CateoryController {
 
     @Autowired
-    private ICategoryService cateoryService;
-    @GetMapping("/cateories")
+    private ICategoryService categoryService;
+
+    @GetMapping("/categories")
     public ResponseVo<List<CategoryVo>> selectAll(){
-        return cateoryService.selectAll();
+        return categoryService.selectAll();
     }
 
 }
