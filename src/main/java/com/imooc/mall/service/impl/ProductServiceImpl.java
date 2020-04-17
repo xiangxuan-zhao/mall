@@ -8,6 +8,7 @@ import com.imooc.mall.vo.ProductVo;
 import com.imooc.mall.vo.ResponseVo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.stream.Collectors;
  * @author Administrator
  * @date 2020/04/17
  */
+@Service
 public class ProductServiceImpl implements IProductService {
     @Autowired
     private ProductMapper productMapper;
