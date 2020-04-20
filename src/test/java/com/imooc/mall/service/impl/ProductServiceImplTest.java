@@ -12,11 +12,10 @@ import static org.junit.Assert.*;
  */
 public class ProductServiceImplTest extends MallApplicationTest {
 
-    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private ProductServiceImpl productService;
     @Test
     public void list() {
-        productService.list(100001,1,10);
+        productService.list(100001,1,1);
     }
 }
